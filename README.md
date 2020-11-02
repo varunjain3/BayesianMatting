@@ -94,29 +94,37 @@ After Running the algorithm on each image we get -
 #### For GT14-
 
 The Input Image -
+
 ![Input Image](data/input_training_lowres/GT14.png)
 
 The Trimap Image -
+
 ![Trimap](data/trimap_training_lowres/GT14.png)
 
 The Solved Alpha Matte -
+
 ![Solved Alpha](results/GT14_alpha.png)
 
 Finnaly, The mask over the orignal image -
+
 ![Masked Image](results/GT14.png)
 
 #### For GT25-
 
 The Input Image -
+
 ![Input Image](data/input_training_lowres/GT25.png)
 
 The Trimap Image -
+
 ![Trimap](data/trimap_training_lowres/GT25.png)
 
 The Solved Alpha Matte -
+
 ![Solved Alpha](results/GT25_alpha.png)
 
 Finnaly, The mask over the orignal image -
+
 ![Masked Image](results/GT25.png)
 
 ## References
