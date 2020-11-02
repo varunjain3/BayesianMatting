@@ -8,6 +8,7 @@ This repository was made as an assignment for the FALL2020 course EE321. In this
 - [Background](#background)
 - [Dataset](#dataset)
 - [Technologies](#technologies)
+- [Mathmatical Aspects](#mathematicalaspects)
 - [Setup](#setup)
 - [Results](#results)
 - [References](#references)
@@ -45,6 +46,16 @@ Other technologies used
 - Numpy
 
 ##### \* The project is also compatible with [Google Colabaratory](https://colab.research.google.com/)
+
+## Mathematical Aspects
+
+For matting an image, we want to find that which part (pixel) of the image belongs to the forground and which part belongs to the alpha. For this, we define opacity/alpha as a parameter for each pixel. The image can be considered as a mixture of two seprate forground and background pictures.
+
+For every Pixel we need 7 values. 3 for Forground RGB, 3 for Background RGB and 1 for opacity/alpha.
+
+For Bayesian matting we model each pixel as a distribution of colour data and then try to solve 3 equations to find our 7 variables. We use minimum likelihood estimation to do so. As we can never find the actual values of 7 variables with just 3 equations, but we try to get a close estimate of them.
+
+We recursively solve for all the pixels that are unknown based on the distribution of their neigbouring pixels. Each pixel is predicted based on the center of the the clustering pixel of foreground and background nearby pixels. This way we determine which pixel value comes out to be in the foreground and which in the background.
 
 ## Setup
 
