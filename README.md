@@ -89,6 +89,8 @@ After Running the algorithm on each image we get -
 | GT27 | 9.99 |
 | Average |6.10 |
 
+All the final images are stored in the [results](https://github.com/varunjain3/BayesianMatting/tree/main/results) folder.
+
 ### Here are some of the examples -
 
 #### For GT14-
